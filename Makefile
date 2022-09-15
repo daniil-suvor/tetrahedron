@@ -2,6 +2,7 @@ COMPILER = g++
 FLAGS = -c -Wall -Werror -Wextra
 
 all: main
+	mkdir -p bin build lib
 tetrahedron.o: src/tetrahedron.cpp
 	$(COMPILER) $(FLAGS) src/tetrahedron.cpp -o bin/tetrahedron.o
 plane.o: src/plane.cpp
